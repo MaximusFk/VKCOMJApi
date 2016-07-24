@@ -81,4 +81,24 @@ public class VKValue {
 	public ItemType getType() {
 		return type;
 	}
+	
+	public boolean equalsType(String str) {
+		return type == ItemType.STRING;
+	}
+	
+	public boolean equalsType(int i) {
+		return type == ItemType.INT;
+	}
+	
+	public boolean equalsType(Date d) {
+		return type == ItemType.DATE;
+	}
+	
+	public boolean equalsType(boolean b) {
+		return type == ItemType.BOOL;
+	}
+	
+	public boolean equalsType(URL u) {
+		return type == ItemType.URL;
+	}
 }
